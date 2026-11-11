@@ -1,0 +1,512 @@
+% eq-01
+\[
+x=(a,z,h_f,h_m,N,\mathbf k),\qquad
+\mathbf k=(k_1,\ldots,k_{19}). \tag{1}
+\]
+
+% eq-02
+\[
+\mathcal B(x)=
+\begin{cases}
+\{0,1\},&20\le a\le44,\ N<N_{\max},\\
+\{0\},&\text{其他情况}.
+\end{cases} \tag{2}
+\]
+
+% eq-03
+\[
+D(x,b)=b+\sum_{r=1}^{19}k_r,\qquad
+\mathcal R(x,b)=\rho_0b+\sum_{r=1}^{19}\rho_rk_r. \tag{3}
+\]
+
+% eq-04
+\[
+g_f+g_m+q=\mathcal R(x,b),\quad g_s\ge0,\quad q\ge0. \tag{4}
+\]
+
+% eq-05
+\[
+n_s+g_s+\ell_s+\omega_{js}^{\mathrm{comm}}d_s=1,
+\quad 0\le n_s\le d_s,\quad \ell_s>0. \tag{5}
+\]
+
+% eq-06
+\[
+\begin{aligned}
+&P_{jt}[C+m(x,b)] +r^H_{jt}H +(1-s_{jt})p^D_{jt}q\\
+&\quad\le (1-\tau_t)w_{jt}\sum_s e_s(z)h_sn_s\\
+&\qquad+B_{jt}b+\pi_{jt}(a)+\mathcal D_t .
+\end{aligned}\tag{6}
+\]
+
+% eq-07
+\[
+\begin{aligned}
+u_{jt}(x,b,C,H,\ell_f,\ell_m,d_f,d_m)
+=&\ \alpha\log\!\frac{C}{\mathcal E(D)}
++(1-\alpha)\log[H-\underline H(D)]\\
+&+\eta_f(z)\log\ell_f+\eta_m(z)\log\ell_m
++\xi(z)\log(1+N+b)\\
+&+\mathfrak a_{jt}(z)-F_f(z)d_f-F_m(z)d_m .
+\end{aligned}\tag{7}
+\]
+
+% eq-08
+\[
+h'_{s}=(1-\delta_s)h_s+\phi_sn_s,
+\quad0\le\delta_s<1,\ \phi_s\ge0. \tag{8}
+\]
+
+% eq-09
+\[
+a'=a+1,\quad N'=N+b,\quad
+k'_1=b,\quad k'_{r+1}=k_r\ (r=1,\ldots,18). \tag{9}
+\]
+
+% eq-10
+\[
+W^b_{jt}(x)=\max_{C,H,n_s,g_s,\ell_s,d_s,q}
+\left\{u_{jt}(\cdot)+\beta V_{j,t+1}(x')\right\}, \tag{10}
+\]
+
+% eq-11
+\[
+W_{jt}(x)=\sigma_b\log\sum_{b\in\mathcal B(x)}
+\exp\!\left(W^b_{jt}(x)/\sigma_b\right), \tag{11}
+\]
+
+% eq-12
+\[
+p^b_{jt}(x)=\frac{\exp(W^b_{jt}(x)/\sigma_b)}
+{\sum_{\tilde b\in\mathcal B(x)}\exp(W^{\tilde b}_{jt}(x)/\sigma_b)}. \tag{12}
+\]
+
+% eq-13
+\[
+V_{it}(x)=\sigma_m\log\sum_j
+\exp\!\left([W_{jt}(x)-\kappa_{ij}(x)]/\sigma_m\right), \tag{13}
+\]
+
+% eq-14
+\[
+p_{ij,t}(x)=\frac{\exp([W_{jt}(x)-\kappa_{ij}(x)]/\sigma_m)}
+{\sum_l\exp([W_{lt}(x)-\kappa_{il}(x)]/\sigma_m)}. \tag{14}
+\]
+
+% eq-15
+\[
+p_{it}=\upsilon\frac{w_{it}}{A_{it}},\qquad
+\upsilon=\frac{\epsilon}{\epsilon-1},\quad\epsilon>1. \tag{15}
+\]
+
+% eq-16
+\[
+P_{jt}=\left[\sum_i\mathcal M_i(T_{ij}p_{it})^{1-\epsilon}\right]^{1/(1-\epsilon)}, \tag{16}
+\]
+
+% eq-17
+\[
+\lambda_{ij,t}=\frac{\mathcal M_i(T_{ij}p_{it})^{1-\epsilon}}
+{\sum_l\mathcal M_l(T_{lj}p_{lt})^{1-\epsilon}}. \tag{17}
+\]
+
+% eq-18
+\[
+\bar\mu_{j,t}(dx)=\sum_i p_{ij,t}(x)\mu_{i,t}(dx). \tag{18}
+\]
+
+% eq-19
+\[
+E_{jt}=P_{jt}\langle C+m\rangle_{jt},\quad
+R_{it}=\sum_j\lambda_{ij,t}E_{jt}, \tag{19}
+\]
+
+% eq-20
+\[
+L^G_{it}=\frac{R_{it}}{\upsilon w_{it}},\qquad
+\Pi_{it}=\frac{R_{it}}{\epsilon}. \tag{20}
+\]
+
+% eq-21
+\[
+\langle H\rangle_{jt}=\bar H_j. \tag{21}
+\]
+
+% eq-22
+\[
+p^D_{jt}=\frac{w_{jt}}{A^D_{jt}}+\zeta_{jt},\quad
+L^D_{jt}=\frac{Q_{jt}}{A^D_{jt}}, \tag{22}
+\]
+
+% eq-23
+\[
+Q_{jt}\le\bar Q_{jt},\quad\zeta_{jt}\ge0,\quad
+\zeta_{jt}(\bar Q_{jt}-Q_{jt})=0. \tag{23}
+\]
+
+% eq-24
+\[
+L^S_{jt}=\left\langle\sum_s e_s(z)h_sn_s\right\rangle_{jt}
+=L^G_{jt}+L^D_{jt}. \tag{24}
+\]
+
+% eq-25
+\[
+\tau_t\sum_jw_{jt}L^S_{jt}
+=\sum_j\left\langle B_{jt}b+\pi_{jt}(a)+s_{jt}p^D_{jt}q\right\rangle_{jt}. \tag{25}
+\]
+
+% eq-26
+\[
+M_t\mathcal D_t=\sum_j
+\left[r^H_{jt}\bar H_j+\Pi_{jt}+\zeta_{jt}Q_{jt}\right]. \tag{26}
+\]
+
+% eq-27
+\[
+\sum_jE_{jt}=\sum_iR_{it}
+=\sum_iw_{it}L^G_{it}+\sum_i\Pi_{it}. \tag{27}
+\]
+
+% eq-28
+\[
+\mathcal A_{j,t+1}(z')=
+\int\sum_b p^b_{jt}(x)k_{19}\Gamma(z'\mid z)\bar\mu_{j,t}(dx). \tag{28}
+\]
+
+% eq-29
+\[
+\begin{aligned}
+\mu_{j,t+1}(dx')
+=&\int_{a<84}\sum_b p^b_{jt}(x)
+\delta_{\mathcal T_b(x)}(dx')\bar\mu_{j,t}(dx)\\
+&+\sum_{z'}\frac{\mathcal A_{j,t+1}(z')}{2}
+\delta_{x^{\mathrm{entry}}(z')}(dx').
+\end{aligned}\tag{29}
+\]
+
+% eq-30
+\[
+\mathcal B_t=\sum_j\langle b\rangle_{jt},\qquad
+\mathcal N_t=\sum_i\int\left(2+\sum_{r=1}^{19}k_r\right)\mu_{i,t}(dx). \tag{30}
+\]
+
+% eq-31
+\[
+\mathcal N_{t+1}=\mathcal N_t+\mathcal B_t-2X_t. \tag{31}
+\]
+
+% eq-32
+\[
+\vartheta_s=(1-\tau_t)w_{jt}e_s(z)h_s\Lambda
++\beta\phi_s\,\frac{\partial V_{j,t+1}(x')}{\partial h'_s}. \tag{32}
+\]
+
+% eq-33
+\[
+\vartheta_s=\nu\quad(g_s>0),\qquad
+\nu=\Lambda(1-s_{jt})p^D_{jt}\quad(q>0\text{ 且非个体边界}). \tag{33}
+\]
+
+% eq-34
+\[
+\begin{aligned}
+0=&\ \frac{\xi}{1+N+b}
+-\alpha\frac{\mathcal E'(D)}{\mathcal E(D)}
++\Lambda[B_{jt}-P_{jt}m_0-r^H_{jt}\underline H'(D)]
+-\nu\rho_0\\
+&+\beta\left[\frac{\partial V_{j,t+1}}{\partial N'}
++\frac{\partial V_{j,t+1}}{\partial k'_1}\right].
+\end{aligned}\tag{34}
+\]
+
+% inline-001
+\(t=0,1,\ldots\)
+
+% inline-002
+\(i,j=1,\ldots,J\)
+
+% inline-003
+\(f,m\)
+
+% inline-004
+\(i\)
+
+% inline-005
+\(a\)
+
+% inline-006
+\(z\)
+
+% inline-007
+\(h_f,h_m\)
+
+% inline-008
+\(N\)
+
+% inline-009
+\(k_r\)
+
+% inline-010
+\(r\)
+
+% inline-011
+\(\mu_{i,t}(dx)\)
+
+% inline-012
+\(M_t=\sum_i\int\mu_{i,t}(dx)\)
+
+% inline-013
+\(j\)
+
+% inline-014
+\(b\in\{0,1\}\)
+
+% inline-015
+\(N_{\max}\)
+
+% inline-016
+\(\rho_r\)
+
+% inline-017
+\(g_f,g_m\)
+
+% inline-018
+\(q\)
+
+% inline-019
+\(s\in\{f,m\}\)
+
+% inline-020
+\(d_s\in\{0,1\}\)
+
+% inline-021
+\(n_s\)
+
+% inline-022
+\(\ell_s\)
+
+% inline-023
+\(\omega_{js}^{\mathrm{comm}}\)
+
+% inline-024
+\(n_s=d_s=0\)
+
+% inline-025
+\(P_{jt}\)
+
+% inline-026
+\(r^H_{jt}\)
+
+% inline-027
+\(p^D_{jt}\)
+
+% inline-028
+\(w_{jt}\)
+
+% inline-029
+\(w_{jt}\sum_s e_s(z)h_sn_s\)
+
+% inline-030
+\(e_s(z)h_s\)
+
+% inline-031
+\(C\)
+
+% inline-032
+\(H\)
+
+% inline-033
+\(m(x,b)=m_0b+\sum_rm_rk_r\)
+
+% inline-034
+\(\mathcal E(D)>0\)
+
+% inline-035
+\(\underline H(D)\)
+
+% inline-036
+\(H>\underline H(D)\)
+
+% inline-037
+\(s_{jt}\in[0,1)\)
+
+% inline-038
+\(B_{jt}\)
+
+% inline-039
+\(\pi_{jt}(a)\)
+
+% inline-040
+\(\tau_t\)
+
+% inline-041
+\(\mathcal D_t\)
+
+% inline-042
+\(B_{jt}=\bar B_{jt}P_{jt}\)
+
+% inline-043
+\(\pi_{jt}=\bar\pi_{jt}P_{jt}\mathbf1\{a\ge65\}\)
+
+% inline-044
+\(0<\alpha<1\)
+
+% inline-045
+\(\xi>0\)
+
+% inline-046
+\(-\infty\)
+
+% inline-047
+\(k_{19}\)
+
+% inline-048
+\(N'=N+b-k_{19}\)
+
+% inline-049
+\(b\)
+
+% inline-050
+\(0<\beta<1\)
+
+% inline-051
+\(V\)
+
+% inline-052
+\(\sigma_b>0\)
+
+% inline-053
+\(\sigma_m>0\)
+
+% inline-054
+\(\kappa_{ij}(x)\ge0\)
+
+% inline-055
+\(\kappa_{ii}=0\)
+
+% inline-056
+\(\mathcal M_i>0\)
+
+% inline-057
+\(A_{it}>0\)
+
+% inline-058
+\(T_{ij}\ge1\)
+
+% inline-059
+\(T_{ii}=1\)
+
+% inline-060
+\(\langle f\rangle_{jt}=\int\sum_b p^b_{jt}(x)f(x,b)\bar\mu_{j,t}(dx)\)
+
+% inline-061
+\(\sum_j\lambda_{ij}E_j\)
+
+% inline-062
+\(\bar H_j>0\)
+
+% inline-063
+\(A^D_{jt}>0\)
+
+% inline-064
+\(Q_{jt}=\langle q\rangle_{jt}\)
+
+% inline-065
+\(\zeta\)
+
+% inline-066
+\(s\)
+
+% inline-067
+\(\bar Q\)
+
+% inline-068
+\(0\le\tau_t<1\)
+
+% inline-069
+\(w_{1t}=1\)
+
+% inline-070
+\(\Gamma(z'\mid z)\)
+
+% inline-071
+\(\sum_{z'}\Gamma(z'\mid z)=1\)
+
+% inline-072
+\(h_s\)
+
+% inline-073
+\(h^0_f(z'),h^0_m(z')\)
+
+% inline-074
+\(N=0,\mathbf k=\mathbf0\)
+
+% inline-075
+\(\mathcal A_{j,t+1}(z')/2\)
+
+% inline-076
+\(\mathcal T_b(x)\)
+
+% inline-077
+\(X_t=\sum_i\int\mathbf1\{a=84\}\mu_{i,t}(dx)\)
+
+% inline-078
+\(L^S\)
+
+% inline-079
+\(L^G\)
+
+% inline-080
+\(L^D\)
+
+% inline-081
+\(L^S_j/\sum_lL^S_l\)
+
+% inline-082
+\(\mathcal B\)
+
+% inline-083
+\(\Lambda\)
+
+% inline-084
+\(\vartheta_s=\eta_s/\ell_s\)
+
+% inline-085
+\(n_s>0\)
+
+% inline-086
+\(\nu\)
+
+% inline-087
+\(\Delta^bW=W^1-W^0\)
+
+% inline-088
+\(t\)
+
+% inline-089
+\(t+20\)
+
+% inline-090
+\(\{\mu_{i,0}\}\)
+
+% inline-091
+\(b=0\)
+
+% inline-092
+\(\beta\)
+
+% inline-093
+\(\sigma_m\)
+
+% inline-094
+\(\sigma_b\)
+
+% inline-095
+\(\Gamma\)
+
+% inline-096
+\(A_{jt}\)
+
+% inline-097
+\(K_{t+1}=(1-\delta_K)K_t+I_t\)
